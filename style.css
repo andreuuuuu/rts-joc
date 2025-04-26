@@ -1,0 +1,36 @@
+#ship {
+    position: absolute;
+    width: 130px;   /* mărim lățimea */
+    height: 90px;  /* mărim înălțimea */
+    background-image: url('ship.png');
+    background-size: cover;
+    background-position: center;
+    bottom: 60px;
+    transform: rotate(90deg); /* aici o rotim 90 de grade */
+}
+.bullet {
+    background-image: url('bullet.png'); /* <- PNG pentru glonț */
+    background-size: cover;
+    background-position: center;
+    width: 10px;
+    height: 20px;
+    position: absolute;
+}
+
+.target {
+    background-image: url('enemy.png'); /* <- PNG pentru inamic */
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: red;
+}
